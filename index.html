@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap gyakorlás</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#" method="get">
+        <fieldset>
+            <!-- kereten lévő szöveg -->
+            <legend>regisztráció</legend>
+            <label for="user">Felhasználónév:</label>
+            <input type="text" id="fhnev" placeholder="csak ékezetmentes betűk" name="fhnev" value="" size="20"><br>
+            <!-- label for és input egyezzen! -->
+            <label for="password">Jelszó: </label>
+            <input type="text" id="jelszo" placeholder="min. 3 karakter" value="" size="20">
+            <br>
+            <label for="e-mail">E-mail cím: </label>
+            <input type="text" id="e-mail" placeholder="minta@minta.hu" name="e-mail" oninput="this.form.f_sz.value=this.value" max="20">
+            <br>
+        </fieldset>
+        <fieldset>
+            <!-- kereten lévő szöveg -->
+            <legend>születés</legend>
+            <label for="szuletes">Születési dátum: </label>
+            <input type="date" id="neve" name="nev" value="" size="10"><br>
+        </fieldset>
+        <div>
+            <input type="submit" value="Regisztráció">
+        </div>
+    </form>
+</body>
+</html>

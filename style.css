@@ -1,0 +1,33 @@
+legend {
+    background-color: lightgreen;
+    border: solid 1px green;
+}
+
+/* minden beviteli mezőre érvényes */
+input {
+    float: right;
+    margin: 10px;
+    margin-right: 300px;
+}
+
+/* csak az adott típusú bev.-i mezőre érvényes */
+input[type=submit]{
+    background-color: lightblue;
+}
+
+div {
+    text-align: center;
+}
+
+#placeholder {
+    float: left;
+}
+
+br {
+    clear: both;
+}
+
+.kotelezo_mezo label::after {
+    content: "*";
+    color: red;
+}
